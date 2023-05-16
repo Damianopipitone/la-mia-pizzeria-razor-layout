@@ -88,7 +88,13 @@
     }
 </ul>
 
-<p>5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi</p>
+<p>
+   
+    5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
+
+</p>
+
+<p>@DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")</p>
 
 <p>
     6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
@@ -96,3 +102,7 @@
     b. che giorno della settimana è oggi (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)
     c. che giorno della settimana sarà nello stesso giorno e mese di oggi ma tra un anno (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)
 </p>
+
+<p>@DateTime.Today.AddDays(-7).ToShortDateString()</p>
+<p>@DateTime.Now.DayOfWeek.ToString()</p>
+<p>@DateTime.Today.AddDays(365).DayOfWeek.ToString()</p>

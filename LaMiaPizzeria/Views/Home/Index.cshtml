@@ -17,39 +17,7 @@
 <body style="background-image: url('https://previews.123rf.com/images/betelgejze/betelgejze1604/betelgejze160400001/54790204-pizza-al-taglio-e-piatto-linea-forchetta-e-coltello-su-sfondo-con-texture-grunge-disegno.jpg');">
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-black">
-            <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#">Pizzeria da Tonino</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Menù</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Su di noi
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Chi siamo</a></li>
-                                <li><a class="dropdown-item" href="#">I nostri prodotti</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Contattaci!</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-light" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+        @Html.Partial("_Header")
     </header>
     
     <main>
@@ -64,7 +32,7 @@
                         <img src="https://www.italiangourmet.it/media/2021/01/AdobeStock_249705045.jpeg" class="card-img-top" alt="Margherita">
                         <div class="card-body">
                             <h3 class="card-text">Margherita</h3>
-                            <h5 class="card-text">La classica pizza Margerita di Tonino non stanca mai!</h5>
+                            <p class="card-text">La classica pizza Margerita di Tonino non stanca mai!</p>
                             <h4 class="card-text">6,50 €</h4>
                         </div>
                     </div>
@@ -76,7 +44,7 @@
                         <img src="https://www.farinapetra.it/cms-data/gallery/blog/Notizie2/tredicisette-ecco-la-pizza-gourmet-di-marco-da-palermo-a-melbourne-andata-e-ritorno/78239603_2198051336961703_2909228752581951488_n-sq.jpg" class="card-img-top" alt="Pistacchiosa">
                         <div class="card-body">
                             <h3 class="card-text">Pistacchiosa</h3>
-                            <h5 class="card-text">Golosa con Mortazza e Pistacchio, che vuoi di più?</h5>
+                            <p class="card-text">Golosa con Mortazza e Pistacchio, che vuoi di più?</p>
                             <h4 class="card-text">11,50 €</h4>
                         </div>
                     </div>
@@ -89,7 +57,7 @@
                         <img src="https://www.lucianopignataro.it/wp-content/uploads/2019/02/La-Fuoco-e-Neve-e1550405811162.jpg" class="card-img-top" alt="Pizza-Gourmet">
                         <div class="card-body">
                             <h3 class="card-text">Gourmet</h3>
-                            <h5 class="card-text">Per chi ha un palato superiore!</h5>
+                            <p class="card-text">Per chi ha un palato superiore!</p>
                             <h4 class="card-text">14,00 €</h4>
                         </div>
                     </div>
@@ -101,11 +69,11 @@
 
                 <div class="col-4">
 
-                    <div class="card" width="300">
+                    <div class="card">
                         <img src="https://www.dottorpeperoncino.com/img_news/big/54.jpg" class="card-img-top" alt="Diavola">
                         <div class="card-body">
                             <h3 class="card-text">Diavola</h3>
-                            <h5 class="card-text">Più piccante di un peperoncino calabrese</h5>
+                            <p class="card-text">Più piccante di un peperoncino calabrese</p>
                             <h4 class="card-text">7,50 €</h4>
                         </div>
                     </div>
@@ -117,7 +85,7 @@
                         <img src="https://www.tasteatlas.com/images/dishes/b44b470fae3648d0bffd06aa9e7b782c.jpg" class="card-img-top" alt="Vegetariana">
                         <div class="card-body">
                             <h3 class="card-text">Vegetariana</h3>
-                            <h5 class="card-text">Preparata solo con prodotti di altissima qualità</h5>
+                            <p class="card-text">Preparata solo con prodotti di altissima qualità</p>
                             <h4 class="card-text">7,00 €</h4>
                         </div>
                     </div>
@@ -130,7 +98,7 @@
                         <img src="https://img77.uenicdn.com/image/upload/v1581079579/service_images/shutterstock_327717539.jpg" class="card-img-top" alt="Pizza-Dolce">
                         <div class="card-body">
                             <h3 class="card-text">Dolce</h3>
-                            <h5 class="card-text">Attenzione alla glicemia!</h5>
+                            <p class="card-text">Attenzione alla glicemia!</p>
                             <h4 class="card-text">8,00 €</h4>
                         </div>
                     </div>
@@ -142,27 +110,8 @@
         </div>
     </main>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-black mb-0">
-        
-        <div class="col-md-4 d-flex align-items-center">
-            
-            <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
-                
-                <img src="https://cdn-icons-png.flaticon.com/128/10725/10725140.png" alt="PizzaLogo" />
-            
-            </a>
-            
-            <span class="mb-3 mb-md-0 text-light">© 2022 PizzeriaDaTonino, Inc</span>
-        
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3">
-            
-            <li class="ms-3 text-light"><a href="#"><img class="bi" width="24" height="24" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" /></svg></a></li>
-            <li class="ms-3 text-ligth"><a href="#"><img class="bi" width="24" height="24" src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png" /></a></li>
-            <li class="ms-3 text-light"><a href="#"><img class="bi" width="24" height="24" src="https://cdn-icons-png.flaticon.com/128/733/733547.png" /></a></li>
-        
-        </ul>
+    <footer>
+        @Html.Partial("_Footer")
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
